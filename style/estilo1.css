@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    padding-top: 90px;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    
+
+    
+
+
+
+}
+
+header .header-icono {
+
+    width: 200px;
+    height: 200px;
+    /* margin: 0 auto;
+    margin-top: 50px; */
+    line-height: 80px;
+    overflow: hidden;
+}
+
+header .header-icono .header-img-responsive {
+
+    width: 100%;
+    height: auto;
+
+
+}
+
+nav {
+    /* text-align: center;
+    padding: 30px 50px 0 0; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+
+
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+
+    line-height: 80px;
+    margin: 0 10px;
+    width: max-content;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* nav > a {
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+} */
+
+nav img {
+    width: 48px;
+    height: 48px;
+
+}
+
+
+nav img:hover {
+    width: 48px;
+    height: 48px;
+
+
+
+
+}
+
+
+.img-principal {
+    width: 100%;
+    height: 800px;
+    margin-top: 70px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.img-principal video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+@supports(object-fit: cover) {
+    .contenedor-img video {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+
+.img-principal .textos-principal {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.img-principal .textos-principal h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.img-principal .textos-principal h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+/* Portafolio */
+
+
+.portafolio .contenedor .contenedor-portafolio {
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "gridimg1  gridimg2 gridimg2 gridimg3"
+        "gridimg1  gridimg5 gridimg5 gridimg3"
+        "gridimg4  gridimg5 gridimg5 gridimg7"
+        "gridimg4  gridimg6 gridimg6 gridimg7";
+
+
+}
+
+
+
+
+.portafolio {}
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg1 {
+
+    grid-area: gridimg1;
+
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg2 {
+
+    grid-area: gridimg2;
+
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg3 {
+
+    grid-area: gridimg3;
+
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg4 {
+
+    grid-area: gridimg4;
+
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg5 {
+
+    grid-area: gridimg5;
+
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg6 {
+
+    grid-area: gridimg6;
+
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg7 {
+
+    grid-area: gridimg7;
+
+
+}
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg1 img:hover {
+    opacity: .8;
+z-index: -1;
+
+}
+
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg2 img:hover {
+    opacity: .8;
+
+}
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg3 img:hover {
+    opacity: .8;
+
+}
+
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg4 img:hover {
+    opacity: .8;
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg5 img:hover {
+    opacity: .8;
+
+}
+
+
+
+.portafolio .contenedor .contenedor-portafolio .gridimg6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg6 img:hover {
+    opacity: .8;
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.portafolio .contenedor .contenedor-portafolio .gridimg7 img:hover {
+    opacity: .8;
+
+}
+
+
+
+
+footer {
+
+    padding: 200px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+
+}
+
+.contenedor-footer a {
+
+    align-self: flex-end;
+    font-size: 11px;
+    text-decoration: none;
+    color: #9e9797;
+}
+
+
+.contenedor-footer a:hover {
+
+    opacity: .5;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+
+    nav {
+        text-align: center;
+        padding: 30px 40px 0 0;
+    }
+
+    nav>a {
+
+        margin-right: 15px;
+    }
+
+
+    nav img {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    nav img:hover {
+        width: 28px;
+        height: 28px;
+
+    }
+
+
+
+
+
+
+    .portafolio .contenedor .contenedor-portafolio {
+        grid-template-areas:
+            /* "gridimg1  gridimg1 gridimg2 gridimg2"
+        "gridimg1  gridimg1 gridimg2 gridimg2" 
+        "gridimg3  gridimg3 gridimg4 gridimg4" 
+        "gridimg3  gridimg3 gridimg4 gridimg4" 
+        "gridimg5  gridimg5 gridimg6 gridimg6" 
+        "gridimg5  gridimg5 gridimg6 gridimg6" 
+        "gridimg7  gridimg7 gridimg7 gridimg7" */
+
+
+            "gridimg1  gridimg1 gridimg2 gridimg2"
+            "gridimg1  gridimg1 gridimg5 gridimg5"
+            "gridimg3  gridimg3 gridimg4 gridimg4"
+            "gridimg6  gridimg6 gridimg6 gridimg7"
+
+
+
+
+
+        ;
+    }
+
+
+
+    .img-principal {
+        width: 100%;
+        height: 600px;        
+        margin-bottom: 50px;      
+
+        box-sizing: border-box;
+    }
+
+
+    .img-principal video  {
+        width: 100%;
+        height: auto;
+
+    }
+
+
+    @supports(object-fit: cover) {
+        .img-principal  video {
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 200px;
+    }
+
+    header .header-icono {
+
+        width: 200px;
+        height: 100px;
+
+
+    }
+
+
+
+    nav {
+        text-align: center;
+        padding: 30px 40px 0 0;
+    }
+
+    nav>a {
+
+        margin-right: 5px;
+    }
+
+    nav img {
+
+        display: none;
+        /* width: 10px;
+        height: 10px; */
+
+    }
+
+    nav img:hover {
+        /* width: 10px;
+        height: 10px; */
+        display: none;
+
+    }
+
+    .contenedor {
+        padding: 100px 0;
+
+    }
+
+
+    .img-principal {
+        width: 100%;
+        height: 400px;
+        margin-top: 0px;
+        box-sizing: border-box;
+
+    }
+
+
+    .img-principal video {
+        width: 100%;
+        height: auto;
+
+    }
+
+
+    @supports(object-fit: cover) {
+        .img-principal video {
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+
+
+    .img-principal .textos-principal {
+
+        height: 400px;
+
+    }
+
+
+    .portafolio .contenedor .contenedor-portafolio {
+        grid-template-areas:
+            "gridimg1  gridimg1 gridimg1 gridimg1"
+            "gridimg2  gridimg2 gridimg2 gridimg2"
+            "gridimg3  gridimg3 gridimg3 gridimg3"
+            "gridimg4  gridimg4 gridimg4 gridimg4"
+            "gridimg5  gridimg5 gridimg5 gridimg5"
+            "gridimg6  gridimg6 gridimg6 gridimg6"
+            "gridimg7  gridimg7 gridimg7 gridimg7"
+
+
+
+
+        ;
+    }
+}

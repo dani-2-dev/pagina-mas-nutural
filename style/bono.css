@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+
+header {
+    width: 100%;
+    height: 350px;
+
+}
+
+header .header-icono {
+
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+header .header-icono .header-img-responsive {
+
+    width: 100%;
+    height: auto;
+
+}
+
+nav {
+    text-align: center;
+    padding: 30px 40px 0 0;
+}
+
+nav>a {
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+nav img {
+    width: 48px;
+    height: 48px;
+    transition: width 2s, height 2s, transform 2s;
+
+
+}
+
+
+nav img:hover {
+    
+    width: 48px;
+    height: 48px;
+    transform: rotate(360deg);
+}
+
+
+/* seccion grafico bono de ventas */
+
+
+
+.grafiventas{
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 150px;
+
+
+}
+
+
+.conte-bono-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+
+.conte-bono-texto h3{
+
+    font-size: 80px;
+    color: rgb(49, 49, 49);
+  
+}
+
+.img-grafico-ventas{
+ width: 60%;
+    
+}
+
+.img-grafico-ventas img{
+    width: 100%;
+    height: auto;
+}
+
+
+@supports(object-fit: cover) {
+    .img-grafico-ventas img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+
+
+.conteni-puntos-venta{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+   
+    
+}
+
+.texto-puntos-venta{
+    width: 50%;
+    text-align: justify;
+
+}
+
+.texto-puntos-venta h3{
+    font-size: 80px;
+    text-align: end;
+   color: rgb(49, 49, 49);
+
+}
+
+
+
+.img-requisitos{
+    width: 100%;
+       
+   }
+   
+   .img-requisitos img{
+       width: 100%;
+       height: auto;
+   }
+   
+   
+   @supports(object-fit: cover) {
+       .img-requisitos img {
+           height: 100%;
+           object-fit: cover;
+           object-position: center center;
+       }
+   }
+
+
+
+
+
+
+
+footer {
+
+    padding: 200px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    width: 90%;
+
+    margin: auto;
+
+
+}
+
+.contenedor-footer .content-foo p {
+
+    text-align: center
+}
+
+
+.titulo-final {
+    text-align: center;
+    font-size: 12px;
+    margin: 30px 0 0 760px;
+    color: #9e9797;
+}
+
+
+
+
+
+/* responsividad  pantallas medias*/
+
+
+@media screen and (max-width: 1200px) {
+
+    nav {
+        text-align: center;
+        padding: 30px 40px 0 0;
+    }
+
+    nav>a {
+
+        margin-right: 15px;
+    }
+
+
+    nav img {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    nav img:hover {
+        width: 28px;
+        height: 28px;
+
+    }
+
+
+
+
+.conte-bono-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 40%;
+    padding: 0 10px;
+}
+
+
+.conte-bono-texto h3{
+
+    font-size: 40px;
+  
+}
+
+.conte-bono-texto p{
+
+    font-size: 13px;
+  
+}
+
+
+
+
+.texto-puntos-venta h3{
+    font-size: 40px;
+    text-align: end;
+   
+
+}
+
+
+.texto-puntos-venta p{
+    font-size: 13px;
+    text-align: end;
+   
+
+}
+
+
+    
+
+
+
+
+    
+
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+.contenedor .grafiventas{
+
+    flex-direction: column;
+    justify-content:space-between;
+    
+    height: 900px;
+    margin-bottom: 60px;
+    
+}
+.contenedor .grafiventas .conte-bono-texto{
+    width: 100%;
+   
+}
+
+
+.conte-bono-texto h3{
+
+    font-size: 35px;
+  
+}
+
+
+.contenedor .grafiventas .img-grafico-ventas{
+    width: 100%;
+}
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 200px;
+    }
+
+    header .header-icono {
+
+        width: 200px;
+        height: 100px;
+
+
+    }
+
+
+
+    nav {
+        text-align: center;
+        padding: 30px 40px 0 0;
+    }
+
+    nav>a {
+
+        margin-right: 5px;
+    }
+
+    nav img {
+
+        display: none;
+        /* width: 10px;
+        height: 10px; */
+
+    }
+
+    nav img:hover {
+        /* width: 10px;
+        height: 10px; */
+        display: none;
+
+    }
+   
+    
+    }
+    

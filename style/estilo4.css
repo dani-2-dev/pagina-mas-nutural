@@ -1,0 +1,909 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+
+header {
+    width: 100%;
+    height: 350px;
+
+}
+
+header .header-icono {
+
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+header .header-icono .header-img-responsive {
+
+    width: 100%;
+    height: auto;
+
+}
+
+nav {
+    text-align: center;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+nav img {
+    width: 48px;
+    height: 48px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+
+nav img:hover {
+    width: 48px;
+    height: 48px;
+    transform: rotate(360deg);
+}
+
+
+/* header .img-principal {
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+ 
+
+
+}
+
+
+header .img-principal video {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+.img-principal .textos-principal{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.img-principal .textos-principal h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.img-principal .textos-principal h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+ */
+
+/* Imagen principal */
+
+.contenedor-img {
+    width: 100%;
+    height: 800px;
+    /* background: wheat;
+    background: -webkit-linear-gradient(to right, hsla(0, 1%, 38%, 0.459), hsla(0, 2%, 12%, 0.651)), url(images/IMG-42.jpg); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: rgb(214, 214, 214);
+    ;
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+
+}
+
+
+.contenedor-img .textos-principal {
+    display: flex;
+    height: 800px;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 20px;
+
+}
+
+
+.contenedor-img .textos-principal h2 {
+
+    font-size: 65px;
+   color: rgb(49,49,49);
+
+
+}
+
+
+
+.contenedor-img .textos-principal p {
+
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+
+
+}
+
+
+/* seccion video negocio */
+
+
+
+/* .video-contenedor {
+    width: 100%;
+    height: 950px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+
+
+
+}
+
+.video-contenedor video {
+    width: 100%;
+    height: auto;
+}
+
+
+@supports(object-fit: cover) {
+    .video-contenedor video {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+} */
+.video-contenedor {
+    width: 100%;
+    height: 650px;
+
+    /* background: wheat;
+    background: -webkit-linear-gradient(to right, hsla(0, 1%, 38%, 0.459), hsla(0, 2%, 12%, 0.651)), url(images/IMG-42.jpg); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background:  url(images/IMG-42.jpg); */
+
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 150px;
+
+}
+
+
+.video-contenedor video {
+    width: 100%;
+    height: auto;
+}
+
+
+@supports(object-fit: cover) {
+    .video-contenedor video {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+
+/* seccion tarjetas */
+.tarjetas-red-mercadeo {
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+/* Estilos primera columna */
+
+.tarjetas-red-mercadeo .tj-merca-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 60%;
+
+}
+
+
+.tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 250px;
+
+}
+
+
+.tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card {
+
+    display: flex;
+
+
+
+
+
+}
+
+.tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card img {
+
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+
+}
+
+.tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card>.conte-txt-card {
+    width: 60%;
+    color: #fff;
+    color: rgb(235, 55, 150);
+
+
+}
+
+
+
+.tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card>.conte-txt-card h3 {
+    font-weight: 800;
+    padding-top: 5px;
+
+
+}
+
+.tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-txt {
+    width: 100%;
+    height: 200px;
+
+    padding: 15px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-txt h3 {
+color: rgb(49,49,49);
+
+}
+
+
+
+
+
+/* estilos a segunda columna */
+
+
+.tarjetas-red-mercadeo .tj-merca-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+
+}
+
+.tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt1 {
+
+    width: 100%;
+    padding: 15px;
+    text-align: justify;
+
+}
+
+.tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 {
+
+
+    width: 100%;
+    height: 150px;
+    background: rgb(224, 224, 224);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+}
+
+.tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 h2 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(235, 55, 150);
+}
+
+.tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 p {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 .tj-merca-txt-2-caja {
+
+    width: 70%;
+    margin-top: -10px;
+    margin-left: 2%;
+    height: 30px;
+
+    color: white;
+    background-color: black;
+}
+
+
+/* seccion botones */
+
+.btn-final {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-final .btn-style {
+    background: white;
+    width: 200px;
+    height: 50px;
+    border: rgb(214, 214, 214) 1px solid;
+    cursor: pointer;
+
+}
+
+.btn-final .btn-style h3 {
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+    color: #838080;
+    font-weight: 200;
+}
+
+.btn-final  a {
+
+    text-decoration: none;
+}
+
+
+.btn-final .btn-style:hover {
+    
+    opacity: .5;
+}
+
+
+footer {
+
+    padding: 200px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    width: 90%;
+
+    margin: auto;
+
+
+}
+
+.contenedor-footer .content-foo p {
+
+    text-align: center
+}
+
+
+.titulo-final {
+    text-align: center;
+    font-size: 12px;
+    margin: 30px 0 0 760px;
+    color: #9e9797;
+}
+
+
+
+
+/* responsividad  pantallas medias*/
+
+
+@media screen and (max-width: 950px) {
+
+    nav {
+        text-align: center;
+        padding: 30px 40px 0 0;
+    }
+
+    nav>a {
+
+        margin-right: 15px;
+    }
+
+
+    nav img {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    nav img:hover {
+        width: 28px;
+        height: 28px;
+
+    }
+
+
+    .contenedor-img {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 50px;
+
+
+
+
+    }
+
+
+    .contenedor-img .textos-principal {
+        display: flex;
+        height: 400px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 20px;
+
+    }
+
+
+    .contenedor-img .textos-principal h2 {
+
+        font-size: 35px;
+        color: black;
+
+
+    }
+
+
+
+    .contenedor-img .textos-principal p {
+
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+
+
+    }
+
+
+
+    .video-contenedor {
+
+        height: 300px;
+        margin-bottom: 50px;
+
+
+    }
+
+
+
+
+    
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+
+    }
+
+
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card img {
+
+        width: 50px;
+        height: 50px;
+       
+    
+    
+    }
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card>.conte-txt-card h3 {
+        font-weight: 300;
+        padding-top: 5px;
+        font-size: 16px;
+    
+    
+    }
+    
+
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-txt {
+
+       
+
+
+
+    }
+
+
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-txt h3 {
+
+
+        text-align: center;
+
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-1 {
+
+        width: 100%;
+        
+        justify-content: space-evenly;
+    }
+
+
+    .tarjetas-red-mercadeo .tj-merca-2 {
+
+        width: 100%;
+        justify-content: space-evenly;
+       
+
+
+
+
+
+
+    }
+
+
+
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 {
+
+
+        height: 120px;
+
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 h2 {
+
+        font-size: 25px;
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 p {
+        text-align: center;
+        font-size: 16px;
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 .tj-merca-txt-2-caja {
+
+        width: 60%;
+        margin-top: -10px;
+        margin-left: 2%;
+        height: 30px;
+
+        color: white;
+        background-color: black;
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 .tj-merca-txt-2-caja h3 {
+
+        font-size: 11px;
+        line-height: 30px;
+    }
+
+
+
+
+
+
+    
+
+
+
+}
+
+
+
+
+/* responsividad */
+
+
+@media screen and (max-width: 500px) {
+
+    header {
+        height: 200px;
+    }
+
+    header .header-icono {
+
+        width: 200px;
+        height: 100px;
+
+
+    }
+
+
+
+    nav {
+        text-align: center;
+        padding: 30px 40px 0 0;
+    }
+
+    nav>a {
+
+        margin-right: 5px;
+    }
+
+    nav img {
+
+        display: none;
+        /* width: 10px;
+        height: 10px; */
+
+    }
+
+    nav img:hover {
+        /* width: 10px;
+        height: 10px; */
+        display: none;
+
+    }
+
+
+    .contenedor-img {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 50px;
+
+
+
+
+    }
+
+
+    .contenedor-img .textos-principal {
+        display: flex;
+        height: 400px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 20px;
+
+    }
+
+
+    .contenedor-img .textos-principal h2 {
+
+        font-size: 35px;
+        color: black;
+
+
+    }
+
+
+
+    .contenedor-img .textos-principal p {
+
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+
+
+    }
+
+
+
+
+
+
+    .video-contenedor {
+
+        height: 200px;
+        margin-bottom: 50px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .tarjetas-red-mercadeo {
+        flex-direction: column;
+
+        height: 1050px;
+
+    }
+
+
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+
+    }
+
+
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card img {
+
+        width: 50px;
+        height: 50px;
+       
+    
+    
+    }
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-img .card>.conte-txt-card h3 {
+        font-weight: 300;
+        padding-top: 5px;
+        font-size: 16px;
+    
+    
+    }
+    
+
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-txt {
+
+        height: 300px;
+
+
+
+    }
+
+
+    .tarjetas-red-mercadeo .tj-merca-1 .tj-merca-1-txt h3 {
+
+
+        text-align: center;
+
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-1 {
+
+        width: 100%;
+        height: 600px;
+        justify-content: space-between;
+    }
+
+
+    .tarjetas-red-mercadeo .tj-merca-2 {
+
+        width: 100%;
+        height: 400px;
+
+
+
+
+
+
+    }
+
+
+
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 {
+
+
+        height: 120px;
+
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 h2 {
+
+        font-size: 25px;
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 p {
+        text-align: center;
+        font-size: 16px;
+
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 .tj-merca-txt-2-caja {
+
+        width: 60%;
+        margin-top: -10px;
+        margin-left: 2%;
+        height: 30px;
+
+        color: white;
+        background-color: black;
+    }
+
+    .tarjetas-red-mercadeo .tj-merca-2 .tj-merca-txt-2 .tj-merca-txt-2-caja h3 {
+
+        font-size: 16px;
+    }
+
+
+
+
+
+    /* seccion botones */
+
+.btn-final {
+    width: 100%;
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+  
+    align-items: center;
+}
+
+
+
+.btn-final .btn-style h3 {
+
+ 
+    font-size: 13px;
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
